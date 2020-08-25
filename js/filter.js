@@ -7,7 +7,7 @@
       coat: setupWizard.querySelector('.wizard-coat').style.fill,
       eyes: setupWizard.querySelector('.wizard-eyes').style.fill,
     }
-    console.log(setupWizardColors);
+
     let similarWizards = document.querySelectorAll('.setup-similar-list .setup-similar-item');
     let similarList = document.querySelector('.setup-similar-list');
     let similarPoints = [];
@@ -26,8 +26,9 @@
         similarPoints.push(0);
       }
     })
-    console.log(similarPoints);
 
+    //This 3 arrays are created to rearrange filtered wizards and concat them. Not elegant - but working, should've been
+    //redone
     let max = [];
     let medium = [];
     let min = [];

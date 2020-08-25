@@ -10,6 +10,7 @@
   // Add draggable setup
 
   setupUserPic.addEventListener('mousedown', function (evt) {
+    evt.preventDefault();
     setupUserPic.style.cursor = 'grabbing';
     shiftX = evt.offsetX;
     shiftY = evt.offsetY;
